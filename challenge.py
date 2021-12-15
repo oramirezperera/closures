@@ -1,6 +1,7 @@
 def make_division_by(n):
     """This closures returns a function that returns the division of an x number by n"""
     def division_by(x):
+        assert n != 0, "Division by zero is not defined"
         return x/n
     return division_by
 
